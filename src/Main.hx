@@ -4,11 +4,9 @@ class Main extends hxd.App {
 
     var bmp : h2d.Bitmap;
     var velocity : Float = 5;
-    var gravity : Float = 1;
+    var gravity : Float = 1; 
     var jumpVelocity : Float = 10;
-    var jump : Bool = false;
-
-    var chunkSize : Float = 100;
+    var jump : Bool;
 
     override function init() {
         // create red texture and 100 x 100 tile from it
@@ -34,19 +32,17 @@ class Main extends hxd.App {
             jumpVelocity = 0;
             jump = false;
         }
+        trace("Hello world!");
     }
 
     override function update(deltaTime:Float) {
-        // box falls 100 pixels per second
-        // bmp.y += velocity * chunkSize * deltaTime;
-        // acceleration
-        // velocity += gravity * deltaTime;
 
         if ( jump == true )
         {
             doJump();
         }
 
+        // movement
         if( Key.isDown("W".code) ) 
         {
             bmp.y -= velocity;
