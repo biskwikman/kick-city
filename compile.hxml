@@ -2,7 +2,7 @@
 -lib heaps
 -lib hlsdl
 # compile format
--hl hello.hl
+-hl game.hl
 # main file
 -main Main
 -debug
