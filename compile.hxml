@@ -1,0 +1,8 @@
+-cp src
+-lib heaps
+-lib hlsdl
+# compile format
+-hl hello.hl
+# main file
+-main Main
+-debug
