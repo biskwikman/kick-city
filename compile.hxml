@@ -4,5 +4,5 @@
 # compile format
 -hl game.hl
 # main file
--main Main
+-main Game
 -debug
